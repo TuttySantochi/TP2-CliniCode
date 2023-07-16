@@ -1,0 +1,115 @@
+
+.nuevoevento-wrapper {
+    position: absolute;    
+    bottom: 100px;
+    left: 80%;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: rgba(137, 43, 226, 0.165);
+    transform: translateX(-50%);
+    transition: max-height 0.5s ease;
+  }
+  .nuevoevento-wrapper.active {
+    max-height: 300px;
+  }
+  .nuevoevento-header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: #373c4f;
+    border-bottom: 1px solid #f5f5f5;
+  }
+  .nuevoevento-header .cerrar {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .nuevoevento-header .cerrar:hover {
+    color: blueviolet;
+  }
+  .nuevoevento-header .titulo {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .nuevoevento-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+  }
+  .nuevoevento-body .nuevoevento-input {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .nuevoevento-body .nuevoevento-input input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 0 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #373c4f;
+  }
+  .nuevoevento-body .nuevoevento-input input::placeholder {
+    color: #a5a5a5;
+  }
+  .nuevoevento-body .nuevoevento-input input:focus {
+    border-bottom: 1px solid blueviolet;
+  }
+  .nuevoevento-body .nuevoevento-input input:focus::placeholder {
+    color: blueviolet;
+  }
+  .nuevoevento-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .nuevoevento-footer .nuevoevento-btn {
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: blueviolet;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid blueviolet;
+  }
+  .nuevoevento-footer .nuevoevento-btn:hover {
+    background-color: transparent;
+    color: blueviolet;
+  }
+  .nuevoevento{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;   
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color:blueviolet;
+    border: 2px solid blueviolet;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .nuevoevento i {
+    pointer-events: none;
+  }
